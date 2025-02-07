@@ -7,6 +7,7 @@ import MyFooter from "./components/MyFooter";
 import TvShowsHeader from "./components/TvShowsHeader";
 import HarryPotterGallery from "./components/HarryPotterGallery";
 import LordOfTheRings from "./components/Lord of the Rings";
+import Twilight from "./components/Twilight";
 function App() {
   return (
     <div className="bg-dark">
@@ -14,6 +15,7 @@ function App() {
         <MyNav />
         <TvShowsHeader />
         <HarryPotterGallery />
+        <Twilight />
         <LordOfTheRings />
         <MyFooter />
       </Container>

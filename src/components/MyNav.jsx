@@ -6,7 +6,7 @@ const MyNav = () => {
     <Navbar className="navbar-dark bg-dark" expand="lg">
       <Container fluid>
         <Navbar.Brand href="#">
-          <img height="40" src="../assets/netflix_logo.png" alt="Netflix Logo" />
+          <img height="40" src="./src/assets/netflix_logo.png" alt="Netflix Logo" />
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="navbar-nav" />

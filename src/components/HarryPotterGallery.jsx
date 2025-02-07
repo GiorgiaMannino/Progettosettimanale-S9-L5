@@ -14,7 +14,7 @@ class HarryPotterGallery extends Component {
   }
 
   fetchMovies = () => {
-    fetch("http://www.omdbapi.com/?apikey=1ad1720e&s=Harry+Potter&type=movie")
+    fetch("http://www.omdbapi.com/?apikey=1ad1720e&s=Harry Potter")
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
@@ -54,7 +54,7 @@ class HarryPotterGallery extends Component {
     listMovies.splice(6);
     return (
       <Container>
-        <h5 className=" text-white mt-4 mb-3">Trending Now</h5>
+        <h5 className=" text-white mt-4 mb-3">Harry Potter</h5>
         <Row className="row-cols-1 row-cols-md-3 row-cols-lg-6 g-2">
           {listMovies.map((movie) => (
             <Col key={movie.imdbID}>

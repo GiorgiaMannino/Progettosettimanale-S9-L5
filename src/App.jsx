@@ -66,7 +66,7 @@ const App = () => {
 
 export default App; */
 
-/* PAGINA SETTINGS  */
+/* PAGINA SETTINGS.  */
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";

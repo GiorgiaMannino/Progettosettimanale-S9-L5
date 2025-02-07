@@ -50,13 +50,13 @@ class HarryPotterGallery extends Component {
       return <div>Errore: {error}</div>;
     }
 
-    const firstSixMovies = [...movies];
+    const listMovies = [...movies];
 
     return (
       <Container>
         <Row>
           <h5 className="bg-dark text-white p-3">Trending Now</h5>
-          {firstSixMovies.map((movie) => (
+          {listMovies.map((movie) => (
             <Col key={movie.imdbID}>
               <div className="mb-5">
                 <img src={movie.Poster} alt={movie.Title} />

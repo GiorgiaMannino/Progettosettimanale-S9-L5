@@ -1,4 +1,4 @@
-/* import "bootstrap-icons/font/bootstrap-icons.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 import "./App.css";
 import MyNav from "./components/MyNav";
@@ -45,7 +45,7 @@ class App extends Component {
   }
 }
 
-export default App; 
+export default App;
 
 /* PAGINA PROFILO  */
 /* import "bootstrap-icons/font/bootstrap-icons.css";
@@ -67,7 +67,7 @@ const App = () => {
 export default App; */
 
 /* PAGINA SETTINGS  */
-import "bootstrap-icons/font/bootstrap-icons.css";
+/* import "bootstrap-icons/font/bootstrap-icons.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Settings from "./components/Settings";
@@ -90,3 +90,4 @@ const App = () => {
 };
 
 export default App;
+ */

@@ -9,20 +9,40 @@ import LordOfTheRings from "./components/Lord of the Rings";
 import Dune from "./components/Dune";
 import XMen from "./components/XMen";
 import MoviesHeader from "./components/MoviesHeader";
-function App() {
-  return (
-    <div className="ContainerApp">
-      <Container>
-        <MyNav />
-        <MoviesHeader />
-        <HarryPotterGallery />
-        <XMen />
-        <LordOfTheRings />
-        <Dune />
-        <MyFooter />
-      </Container>
-    </div>
-  );
+import { Component } from "react";
+import Loading from "./components/Loading";
+
+class App extends Component {
+  state = {
+    loading: true,
+  };
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ loading: false });
+    }, 300);
+  }
+  render() {
+    const { loading } = this.state;
+
+    if (loading) {
+      return <Loading />;
+    }
+
+    return (
+      <div className="ContainerApp">
+        <Container>
+          <MyNav />
+          <MoviesHeader />
+          <HarryPotterGallery />
+          <XMen />
+          <LordOfTheRings />
+          <Dune />
+          <MyFooter />
+        </Container>
+      </div>
+    );
+  }
 }
 
 export default App;

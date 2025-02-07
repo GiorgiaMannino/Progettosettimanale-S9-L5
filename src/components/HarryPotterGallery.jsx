@@ -43,23 +43,28 @@ class HarryPotterGallery extends Component {
     const { movies, loading, error } = this.state;
 
     if (loading) {
-      return <div>Caricamento in corso...</div>;
+      return <div>Caricamento dei film...</div>;
     }
 
     if (error) {
-      return <div>Errore: {error}</div>;
+      return <div>Errore {error}</div>;
     }
 
     const listMovies = [...movies];
-
+    listMovies.splice(6);
     return (
       <Container>
-        <Row>
-          <h5 className="bg-dark text-white p-3">Trending Now</h5>
+        <h5 className=" text-white mt-4 mb-3">Trending Now</h5>
+        <Row className="row-cols-1 row-cols-md-3 row-cols-lg-6 g-2">
           {listMovies.map((movie) => (
             <Col key={movie.imdbID}>
               <div className="mb-5">
-                <img src={movie.Poster} alt={movie.Title} />
+                <img
+                  src={movie.Poster}
+                  alt={movie.Title}
+                  className="img-fluid"
+                  style={{ height: "300px", objectFit: "cover" }}
+                />
               </div>
             </Col>
           ))}

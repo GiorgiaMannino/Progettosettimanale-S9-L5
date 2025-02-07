@@ -45,7 +45,7 @@ class App extends Component {
   }
 }
 
-export default App; */
+export default App; 
 
 /* PAGINA PROFILO  */
 /* import "bootstrap-icons/font/bootstrap-icons.css";
@@ -64,5 +64,29 @@ const App = () => {
   );
 };
 
+export default App; */
+
+/* PAGINA SETTINGS  */
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Settings from "./components/Settings";
+import MyNav from "./components/MyNav";
+import { Container } from "react-bootstrap";
+
+const App = () => {
+  return (
+    <div>
+      <div style={{ backgroundColor: "#141414" }}>
+        <Container>
+          <MyNav />
+        </Container>
+      </div>
+      <Container>
+        <Settings />
+      </Container>
+    </div>
+  );
+};
+
 export default App;
- */

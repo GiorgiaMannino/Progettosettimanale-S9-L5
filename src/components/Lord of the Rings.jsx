@@ -14,7 +14,7 @@ class LordOfTheRings extends Component {
   }
 
   fetchMovies = () => {
-    fetch("http://www.omdbapi.com/?apikey=1ad1720e&s=Lord")
+    fetch("http://www.omdbapi.com/?apikey=1ad1720e&s=Lord Of The Rings")
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
@@ -55,14 +55,14 @@ class LordOfTheRings extends Component {
     return (
       <Container>
         <h5 className=" text-white  mb-3">Lord of the Rings</h5>
-        <Row className="row-cols-1 row-cols-md-3 row-cols-lg-6 g-2">
+        <Row className="row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-2">
           {listMovies.map((movie) => (
             <Col key={movie.imdbID}>
               <div>
                 <img
                   src={movie.Poster}
                   alt={movie.Title}
-                  className="img-fluid"
+                  className="img-fluid mb-5"
                   style={{ height: "300px", objectFit: "cover" }}
                 />
               </div>

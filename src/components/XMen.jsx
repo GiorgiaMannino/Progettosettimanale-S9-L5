@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
-class Twilight extends Component {
+class XMen extends Component {
   state = {
     movies: [],
     loading: true,
@@ -14,7 +14,7 @@ class Twilight extends Component {
   }
 
   fetchMovies = () => {
-    fetch("http://www.omdbapi.com/?apikey=1ad1720e&s=Twilight")
+    fetch("http://www.omdbapi.com/?apikey=1ad1720e&s=X-Men")
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
@@ -54,15 +54,15 @@ class Twilight extends Component {
     listMovies.splice(6);
     return (
       <Container>
-        <h5 className=" text-white  mb-3">Twilight</h5>
-        <Row className="row-cols-1 row-cols-md-3 row-cols-lg-6 g-2">
+        <h5 className=" text-white  mb-3">X-Men</h5>
+        <Row className="row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-2">
           {listMovies.map((movie) => (
             <Col key={movie.imdbID}>
               <div>
                 <img
                   src={movie.Poster}
                   alt={movie.Title}
-                  className="img-fluid"
+                  className="img-fluid mb-5"
                   style={{ height: "300px", objectFit: "cover" }}
                 />
               </div>
@@ -73,4 +73,4 @@ class Twilight extends Component {
     );
   }
 }
-export default Twilight;
+export default XMen;

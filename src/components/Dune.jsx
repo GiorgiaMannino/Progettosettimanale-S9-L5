@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
-class HarryPotterGallery extends Component {
+class Dune extends Component {
   state = {
     movies: [],
     loading: true,
@@ -14,7 +14,7 @@ class HarryPotterGallery extends Component {
   }
 
   fetchMovies = () => {
-    fetch("http://www.omdbapi.com/?apikey=1ad1720e&s=Harry Potter")
+    fetch("http://www.omdbapi.com/?apikey=1ad1720e&s=Dune")
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
@@ -54,15 +54,15 @@ class HarryPotterGallery extends Component {
     listMovies.splice(6);
     return (
       <Container>
-        <h5 className=" text-white mt-4 mb-3">Harry Potter</h5>
+        <h5 className=" text-white  mb-3">Dune</h5>
         <Row className="row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-2">
           {listMovies.map((movie) => (
             <Col key={movie.imdbID}>
-              <div className="mb-5">
+              <div>
                 <img
                   src={movie.Poster}
                   alt={movie.Title}
-                  className="img-fluid"
+                  className="img-fluid mb-5"
                   style={{ height: "300px", objectFit: "cover" }}
                 />
               </div>
@@ -73,4 +73,4 @@ class HarryPotterGallery extends Component {
     );
   }
 }
-export default HarryPotterGallery;
+export default Dune;

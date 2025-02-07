@@ -3,7 +3,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 const MyNav = () => {
   return (
-    <Navbar className="navbar-dark bg-dark" expand="lg">
+    <Navbar className="navbar-dark bg-dark mb-3" expand="lg">
       <Navbar.Brand href="#">
         <img height="40" src="./src/assets/netflix_logo.png" alt="Netflix Logo" />
       </Navbar.Brand>

@@ -1,12 +1,12 @@
 import { Dropdown } from "react-bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-const TvShowsHeader = () => {
+const MoviesHeader = () => {
   return (
     <section className="instruments bg-dark text-light">
       <div className="title d-flex justify-content-between align-items-center">
-        <div className="d-flex align-items-center">
-          <h1 className="mb-0">TV Shows</h1>
+        <div className="d-flex align-items-center mb-3">
+          <h1 className="mb-0">Movies</h1>
           <Dropdown className="ms-5">
             <Dropdown.Toggle
               variant="outline-light"
@@ -46,4 +46,4 @@ const TvShowsHeader = () => {
   );
 };
 
-export default TvShowsHeader;
+export default MoviesHeader;

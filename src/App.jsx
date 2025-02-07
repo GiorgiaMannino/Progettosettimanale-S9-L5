@@ -4,19 +4,21 @@ import "./App.css";
 import MyNav from "./components/MyNav";
 import { Container } from "react-bootstrap";
 import MyFooter from "./components/MyFooter";
-import TvShowsHeader from "./components/TvShowsHeader";
 import HarryPotterGallery from "./components/HarryPotterGallery";
 import LordOfTheRings from "./components/Lord of the Rings";
-import Twilight from "./components/Twilight";
+import Dune from "./components/Dune";
+import XMen from "./components/XMen";
+import MoviesHeader from "./components/MoviesHeader";
 function App() {
   return (
     <div className="bg-dark">
       <Container>
         <MyNav />
-        <TvShowsHeader />
+        <MoviesHeader />
         <HarryPotterGallery />
-        <Twilight />
+        <XMen />
         <LordOfTheRings />
+        <Dune />
         <MyFooter />
       </Container>
     </div>

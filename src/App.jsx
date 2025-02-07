@@ -11,7 +11,7 @@ import XMen from "./components/XMen";
 import MoviesHeader from "./components/MoviesHeader";
 function App() {
   return (
-    <div className="bg-dark">
+    <div className="ContainerApp">
       <Container>
         <MyNav />
         <MoviesHeader />

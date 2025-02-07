@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 
 class HarryPotterGallery extends Component {
   state = {
@@ -53,12 +53,12 @@ class HarryPotterGallery extends Component {
     const listMovies = [...movies];
     listMovies.splice(6);
     return (
-      <Container>
+      <div>
         <h5 className=" text-white mt-4 mb-3">Harry Potter</h5>
         <Row className="row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-2">
           {listMovies.map((movie) => (
             <Col key={movie.imdbID}>
-              <div className="mb-5">
+              <div className="Card mb-5">
                 <img
                   src={movie.Poster}
                   alt={movie.Title}
@@ -69,7 +69,7 @@ class HarryPotterGallery extends Component {
             </Col>
           ))}
         </Row>
-      </Container>
+      </div>
     );
   }
 }

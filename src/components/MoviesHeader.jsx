@@ -3,7 +3,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 const MoviesHeader = () => {
   return (
-    <section className="instruments bg-dark text-light">
+    <section className="instruments text-light">
       <div className="title d-flex justify-content-between align-items-center">
         <div className="d-flex align-items-center mb-3">
           <h1 className="mb-0">Movies</h1>

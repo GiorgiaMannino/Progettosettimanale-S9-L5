@@ -1,0 +1,27 @@
+.ContainerApp {
+  font-family: Verdana, sans-serif;
+  background-color: #141414;
+}
+
+.Card:hover {
+  transform: scale(1.08);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.footer-container {
+  max-width: 990px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.85rem;
+}
+
+.footer-container p {
+  margin-bottom: 0.6rem;
+}
+
+.footer button {
+  font-size: 0.9em;
+  margin-top: 1em;
+}

@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 
 class LordOfTheRings extends Component {
   state = {
@@ -53,7 +53,7 @@ class LordOfTheRings extends Component {
     const listMovies = [...movies];
     listMovies.splice(6);
     return (
-      <Container>
+      <div>
         <h5 className=" text-white  mb-3">Lord of the Rings</h5>
         <Row className="row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-2">
           {listMovies.map((movie) => (
@@ -62,14 +62,14 @@ class LordOfTheRings extends Component {
                 <img
                   src={movie.Poster}
                   alt={movie.Title}
-                  className="img-fluid mb-5"
+                  className="img-fluid mb-5 Card"
                   style={{ height: "300px", objectFit: "cover" }}
                 />
               </div>
             </Col>
           ))}
         </Row>
-      </Container>
+      </div>
     );
   }
 }

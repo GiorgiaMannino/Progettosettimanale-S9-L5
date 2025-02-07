@@ -3,7 +3,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 const MyNav = () => {
   return (
-    <Navbar className="navbar-dark bg-dark mb-3" expand="lg">
+    <Navbar className="navbar navbar-expand-lg navbar-dark mb-3" expand="lg">
       <Navbar.Brand href="#">
         <img height="40" src="./src/assets/netflix_logo.png" alt="Netflix Logo" />
       </Navbar.Brand>
@@ -13,10 +13,10 @@ const MyNav = () => {
       <Navbar.Collapse id="navbar-nav">
         <Nav className="me-auto">
           <Nav.Link href="#">Home</Nav.Link>
+          <Nav.Link href="#">TV Shows</Nav.Link>
           <Nav.Link href="#" className="active">
-            TV Shows
+            Movies
           </Nav.Link>
-          <Nav.Link href="#">Movies</Nav.Link>
           <Nav.Link href="#">Recently Added</Nav.Link>
           <Nav.Link href="#">My List</Nav.Link>
         </Nav>

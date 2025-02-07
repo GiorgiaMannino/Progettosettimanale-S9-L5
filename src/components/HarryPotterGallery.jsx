@@ -7,6 +7,19 @@ class HarryPotterGallery extends Component {
     error: null,
   };
 
+  componentDidMount() {
+    console.log("componentDidMount()");
+    this.fetchMovies();
+  }
+
+  fetchMovies = () => {
+    fetch("http://www.omdbapi.com/?apikey=1ad1720e&s=Harry+Potter&type=movie")
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+      });
+  };
+
   render() {
     return (
       <div>

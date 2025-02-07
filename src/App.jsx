@@ -45,13 +45,13 @@ class App extends Component {
   }
 }
 
-export default App;
- */
+export default App; */
 
-import "bootstrap-icons/font/bootstrap-icons.css";
+/* PAGINA PROFILO  */
+/* import "bootstrap-icons/font/bootstrap-icons.css";
 import "./App.css";
 import Profile from "./components/Profile";
-import MyFooter from "./components/MyFooter";
+
 import { Container } from "react-bootstrap";
 
 const App = () => {
@@ -59,10 +59,10 @@ const App = () => {
     <div className="ContainerApp">
       <Container>
         <Profile />
-        <MyFooter />
       </Container>
     </div>
   );
 };
 
 export default App;
+ */

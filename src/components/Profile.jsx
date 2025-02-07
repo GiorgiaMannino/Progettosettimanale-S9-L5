@@ -4,13 +4,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const Profile = () => {
   return (
     <Container>
-      <Row className="align-items-center mb-4">
+      <Row>
         <Col xs={12} md={2} className="text-start">
-          <img height="70" src="./src/assets/netflix_logo.png" alt="Netflix Logo" />
+          <img height="60" src="./src/assets/netflix_logo.png" alt="Netflix Logo" />
         </Col>
+
         <Col xs={12} md={10}>
-          <h1 className="display-3 text-white">Edit Profile</h1>
-          <hr className="mt-4 mb-4 " />
+          <h1 className="display-3 text-white mt-5">Edit Profile</h1>
+          <hr className="mt-4 mb-4 text-white" />
 
           <Row>
             <Col xs={12} md={2} className="mt-2 mb-4 mb-sm-0 position-relative">

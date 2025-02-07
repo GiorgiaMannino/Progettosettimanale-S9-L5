@@ -1,4 +1,4 @@
-import "bootstrap-icons/font/bootstrap-icons.css";
+/* import "bootstrap-icons/font/bootstrap-icons.css";
 
 import "./App.css";
 import MyNav from "./components/MyNav";
@@ -44,5 +44,25 @@ class App extends Component {
     );
   }
 }
+
+export default App;
+ */
+
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "./App.css";
+import Profile from "./components/Profile";
+import MyFooter from "./components/MyFooter";
+import { Container } from "react-bootstrap";
+
+const App = () => {
+  return (
+    <div className="ContainerApp">
+      <Container>
+        <Profile />
+        <MyFooter />
+      </Container>
+    </div>
+  );
+};
 
 export default App;
